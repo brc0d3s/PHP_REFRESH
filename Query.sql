@@ -1,0 +1,27 @@
+CREATE DATABASE phpdb;
+
+USE phpdb;
+
+CREATE TABLE users(
+    id INTEGER  PRIMARY KEY NOT NULL,
+	 uname VARCHAR(150) NOT NULL 
+	 ); 
+	 
+	 
+INSERT INTO users(id,uname)
+VALUES (56647,"brc0d3s");
+
+CREATE TABLE box_office (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    weekend VARCHAR(50),
+    gross VARCHAR(50)
+);
+
+
+
+CREATE TABLE hashing(
+	id BIGINT PRIMARY KEY AUTO_INCREMENT, 
+	email  VARCHAR(50) UNIQUE NOT NULL ,
+	pass VARCHAR(300) NOT NULL 
+);
